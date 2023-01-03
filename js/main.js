@@ -82,8 +82,8 @@ function two1() {
 
 pulse.addEventListener("click", () => {
   gsm.style.width = "100%";
-  update(N4G, 15);
-  update(lte, 35);
-  update(fiveg, 45);
-  update(rf, 85);
+  update(N4G, 45);
+  update(lte, 55);
+  update(fiveg, 35);
+  update(rf, 65);
 });
