@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="overflow-hidden position-relative">
+    <div class="topic-network position-absolute top-0">
+      <div
+        class="w-50"
+        style="border-right: 1px solid black; border-bottom: 1px solid black"
+      >
+        <div class="text-dark pb-1 section-title pt-2">
+          Relative Performance
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <div class="text-end">25%</div>
+            </div>
+            <div class="col-3">
+              <div class="text-end">50%</div>
+            </div>
+            <div class="col-3">
+              <div class="text-end">75%</div>
+            </div>
+            <div class="col-3">
+              <div class="text-end">100%</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100">
+          <!-- 4G -->
+          <div class="text-dark w-100 position-relative" id="4G">
+            <div class="fourg bg-success d-flex aling-items-center">
+              <div class="pt-2">4G -</div>
+              <!-- <div class="position-absolute top-0" style="right: 5px">25%</div> -->
+            </div>
+          </div>
+          <!-- GSM -->
+          <div class="text-dark w-100 position-relative" id="4G">
+            <div class="gsm bg-dark d-flex aling-items-center">
+              <div class="pt-2 text-white">GSM -</div>
+              <!-- <div class="position-absolute top-0" style="right: 5px">25%</div> -->
+            </div>
+          </div>
+          <!-- LTE -->
+          <div class="text-dark w-100 position-relative" id="4G">
+            <div class="lte bg-secondary d-flex aling-items-center">
+              <div class="pt-2">LTE -</div>
+              <!-- <div class="position-absolute top-0" style="right: 5px">25%</div> -->
+            </div>
+          </div>
+          <!-- LTE -->
+          <div class="text-dark w-100 position-relative" id="4G">
+            <div class="fiveg bg-danger d-flex aling-items-center">
+              <div class="pt-2">5G -</div>
+            </div>
+          </div>
+          <!-- RF -->
+          <div class="text-dark w-100 position-relative" id="4G">
+            <div class="rf d-flex aling-items-center" style="background: khaki">
+              <div class="pt-2">RF -</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="position-absolute right-0 d-flex aling-items-center justify-content-end w-100"
+    >
+      <button class="pulse">Start pulse</button>
+    </div>
+
+    <!-- Network mast -->
+    <div class="">
+      <div class="mast mast1 position-absolute">
+        <img src="./images/mast1.png" class="w-100 h-100" alt="" />
+      </div>
+      <div class="mast mast2 position-absolute">
+        <img
+          src="./images/mast2.png"
+          class="w-100 h-100"
+          width="100%"
+          height="100%"
+          alt=""
+        />
+      </div>
+      <div class="mast mast3 position-absolute">
+        <img src="./images/mast3.png" class="w-100 h-100" alt="" />
+      </div>
+    </div>
+    <!-- Wheels -->
+    <div class="wheel wheel1 position-absolute"></div>
+    <div class="wheel wheel2 position-absolute"></div>
+    <div class="wheel wheel3 position-absolute"></div>
+    <div class="wheel wheel4 position-absolute"></div>
+    <div class="wheel wheel5 position-absolute"></div>
+    <div class="wheel wheel6 position-absolute"></div>
+    <!-- Cars -->
+    <div class="car1 position-absolute"></div>
+    <div class="car2 position-absolute"></div>
+    <div class="car3 position-absolute"></div>
+    <div class="track-cover position-absolute w-100">
+      <div class="track"></div>
+    </div>
+    <div
+      class="position-absolute pl-3 d-flex aling-items-center justify-content-center w-100 bottom-0 bg-white p-2"
+    >
+      <div class="container bottom-content w-100">
+        <div class="row">
+          <div class="col-2">
+            <div class="rounded-2 border">
+              <div
+                class="bg-success d-flex align-items-center justify-content-center"
+              >
+                <ion-icon name="wifi-outline" class="text-white"></ion-icon>
+                <div class="text-white fs-4">4G</div>
+              </div>
+              <div class="bg-white text-center n-value fs-2 p-1">34</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="rounded-2 border">
+              <div
+                class="bg-dark d-flex align-items-center justify-content-center"
+              >
+                <ion-icon name="call-outline" class="text-white"></ion-icon>
+                <div class="text-white fs-4">GSM</div>
+              </div>
+              <div class="bg-white text-center n-value fs-2 p-1">34</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="rounded-2 border">
+              <div
+                class="bg-secondary d-flex align-items-center justify-content-center"
+              >
+                <ion-icon
+                  name="git-network-outline"
+                  class="text-white"
+                ></ion-icon>
+                <div class="text-white fs-4">LTE</div>
+              </div>
+              <div class="bg-white text-center n-value fs-2 p-1">34</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="rounded-2 border">
+              <div
+                class="bg-danger d-flex align-items-center justify-content-center"
+              >
+                <ion-icon name="wifi-outline" class="text-white"></ion-icon>
+                <div class="text-white fs-4">5G</div>
+              </div>
+              <div class="bg-white text-center n-value fs-2 p-1">34</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="rounded-2 border">
+              <div
+                class="d-flex align-items-center justify-content-center"
+                style="background: khaki"
+              >
+                <ion-icon name="globe-outline" class="tetx-white"></ion-icon>
+                <div class="text-white fs-4">RF</div>
+              </div>
+              <div class="bg-white text-center n-value fs-2 p-1">34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
