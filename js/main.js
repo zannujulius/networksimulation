@@ -5,7 +5,7 @@ var fiveg = document.querySelector(".fiveg");
 var rf = document.querySelector(".rf");
 var pulse = document.querySelector(".pulse");
 var nvalue = document.querySelectorAll(".n-value");
-var changepulse;
+// var changepulse;
 
 function getRandomArbitrary(min, max) {
   return String(Math.floor(Math.random() * (max - min) + min));
@@ -19,7 +19,7 @@ setInterval(() => {
 
 function update(element, distance) {
   var width = 1;
-  var identity = setInterval(scene, 90);
+  var identity = setInterval(scene, 100);
   function scene() {
     if (width >= distance) {
       clearInterval(identity);
@@ -41,10 +41,10 @@ function one1() {
 
 function two1() {
   gsm.style.width = "100%";
-  update(N4G, 15);
-  update(lte, 35);
-  update(fiveg, 45);
-  update(rf, 85);
+  update(N4G, 48);
+  update(lte, 55);
+  update(fiveg, 40);
+  update(rf, 60);
 }
 
 // function updateWidths() {
@@ -87,3 +87,5 @@ pulse.addEventListener("click", () => {
   update(fiveg, 35);
   update(rf, 65);
 });
+
+two1();
